@@ -14,18 +14,18 @@ In this micro-project, I created models for a backend similar to Reddit in order
 ## Deployment
 
 1. Clone this repo from [here](https://github.com/anewman15/micro-reddit/)
-
-2. Open your terminal and run `bundle install`
-3. Run `rails console` and `Hirb.enable` to enter the console
-4. Run the following queries:
+2. Open your terminal go to the local repo folder and run `bundle install`
+3. Run `rails db:migrate`
+4. Run `rails console` and `Hirb.enable` to enter the console
+5. Run the following queries:
 - `User.all` to get all the users present in the database
 - `Post.all` to get all the posts in the database
 - `Comment.all` to get all the comments in the database
 
-5. Run the query `User.first.posts` and notice it returns the posts created by the user with `id = 1`
-6. Similarly, `Post.first.user` will give you the info about the author of the first post
-7. Run `Comment.first.user` will return the user who created the first comment in the database
-8. You can create more complex queries like `Post.first.user.comments` which returns all the comments made by the author of the first post in the database, and `Comment.find(3).user.comments` to find all the comments made by a commenter.
+6. Run the query `User.first.posts` and notice it returns the posts created by the user with `id = 1`
+7. Similarly, `Post.first.user` will give you the info about the author of the first post
+8. Run `Comment.first.user` will return the user who created the first comment in the database
+9. You can create more complex queries like `Post.first.user.comments` which returns all the comments made by the author of the first post in the database, and `Comment.find(3).user.comments` to find all the comments made by a commenter.
 
 
 ## Author
