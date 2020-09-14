@@ -27,6 +27,8 @@ In this micro-project, I created models for a backend similar to Reddit in order
 7. Run `Comment.first.user` will return the user who created the first comment in the database
 8. You can create more complex queries like `Post.first.user.comments` which returns all the comments made by the author of the first post in the database, and `Comment.find(3).user.comments` to find all the comments made by a commenter.
 
+
+## Author
 👤 **Abdullah Numan**
 
 - Github:   https://github.com/anewman15
